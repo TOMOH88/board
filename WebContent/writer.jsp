@@ -48,7 +48,7 @@ function formCheck() {
 
 <body>
 
-<form action="index.jsp"  method="post" onsubmit="return formCheck();">
+<form action="insert.jsp"  method="post" onsubmit="return formCheck();">
 제목: <input type = "text" name = "title"/> <br/>
 이름: <input type = "text" name = "writer"/> <br/>
 내용: <textarea rows="10" cols="20" name="content"></textarea><br>
