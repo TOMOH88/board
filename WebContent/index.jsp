@@ -1,4 +1,4 @@
-<%@page import="java.util.regex.Pattern"%>
+ <%@page import="java.util.regex.Pattern"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
@@ -6,26 +6,16 @@
 <head>
 <meta charset="UTF-8">
 <style type="text/css">
- 
     table, td, th   {
- 
     border:1px solid green;
- 
     }
- 
     th{
- 
     background-color:green;
- 
     color:white;
- 
-    }
- 
+    } 
 </style>
-
 <title>게시판 메인페이지</title>
 </head>
-
 <%
 request.setCharacterEncoding("utf-8");
     try {	 
@@ -37,9 +27,7 @@ request.setCharacterEncoding("utf-8");
         out.println("Oracle Database Connection Success.");
         Statement stmt = con.createStatement();        
         String sql = "select * from board order by idx desc";
-        rs = stmt.executeQuery(sql);
- 
-    
+        rs = stmt.executeQuery(sql);  
 %>
 <body>                                            
     <h1>게시글 리스트</h1>                      
